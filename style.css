@@ -1,0 +1,233 @@
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Cream);
+    text-align: center;
+    width: 100%;
+
+}
+
+.container {
+    height: 100vh;
+    /* height: calc(100vh-1px); */
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+
+}
+
+.card {
+    display: flex;
+    background-color: var(--White);
+    width: 38em;
+    height: 470px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+
+.card .image {
+    width: 19.4em;
+    height: inherit;
+}
+
+.card .image img {
+    width: inherit;
+    height: inherit;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+    padding-left: 20px;
+}
+
+.details .heading {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: start;
+}
+
+.details .category {
+    font-size: 11px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 4px;
+    color: var(--Dark-grayish-blue);
+}
+
+.details .title {
+    font-size: 30px;
+    font-family: 'Fraunces', serif;
+    width: 80%;
+    color: var(--Very-dark-blue);
+    margin-top: 28px;
+    margin-left: 4px;
+}
+
+.details .detail {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--Dark-grayish-blue);
+    text-align: start;
+    word-spacing: 2px;
+    line-height: 23px;
+    padding-right: 30px;
+}
+
+.details .price {
+    font-size: 30px;
+    font-family: 'Fraunces', serif;
+    color: var(--Dark-cyan);
+    text-align: start;
+    font-weight: 700;
+}
+
+.details .price sup {
+    font-size: 14px;
+    color: var(--Dark-grayish-blue);
+    text-align: start;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-left: 12px;
+    text-decoration: line-through;
+}
+
+.details .btn {
+    padding: 5px 25px 10px 5px;
+}
+
+.details .btn button {
+    width: 100%;
+    background-color: var(--Dark-cyan);
+    border-radius: 9px;
+    padding: 12px 10px 12px 7px;
+    border: none;
+    color: var(--White);
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+.details .btn span {
+    margin-right: 10px;
+}
+
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+    .card {
+        display: flex;
+        background-color: var(--White);
+        width: 21.5em;
+        height: 590px;
+        flex-direction: column
+    }
+
+    .card .image {
+        width: 22.4em;
+        height: 28.5vh;
+    }
+
+    .card .image img {
+        content: url(./images/image-product-mobile.jpg);
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .details .heading {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        text-align: start;
+    }
+
+    .details .category {
+        font-size: 11px;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 4px;
+        color: var(--Dark-grayish-blue);
+    }
+
+    .details .title {
+        font-size: 25px;
+        width: 81%;
+        margin-top: 10px;
+        margin-left: 3px;
+    }
+
+    .details .detail {
+        padding-right: 21px;
+        margin-top: 15px;
+        margin-bottom: 14px;
+    }
+
+    .details .price {
+        margin-bottom: 10px;
+    }
+
+    .details .price sup {
+        font-size: 14px;
+        color: var(--Dark-grayish-blue);
+        text-align: start;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        margin-left: 12px;
+        text-decoration: line-through;
+    }
+
+    .details .btn {
+        padding: 5px 25px 10px 5px;
+    }
+
+    .details .btn button {
+        width: 100%;
+        background-color: var(--Dark-cyan);
+        border-radius: 9px;
+        padding: 12px 10px 12px 7px;
+        border: none;
+        color: var(--White);
+        font-size: 14px;
+        font-weight: bold;
+
+    }
+
+    .details .btn span {
+        margin-right: 10px;
+    }
+
+
+    .attribution {
+        display: none;
+    }
+
+
+}
